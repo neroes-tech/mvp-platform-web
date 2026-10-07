@@ -1,0 +1,36 @@
+/* Neroes MVP — styles for the live widgets added by js/adapter/prototype-v96.js.
+   Same palette as the prototype's v94 layer (--v94-*). */
+.mvpBadge{border:1px solid #ffffff25!important;background:#101e28!important;color:#d6e5ec!important;border-radius:999px!important;padding:7px 12px!important;font-size:11px!important;font-weight:800!important;letter-spacing:.06em;cursor:pointer;white-space:nowrap}
+.mvpBadge[data-state="ok"]{color:#55e3cc!important;border-color:#55e3cc66!important}
+.mvpBadge[data-state="wait"]{color:#f4cd81!important;border-color:#f4cd8166!important}
+.mvpBadge[data-state="off"]{color:#ff9a9a!important;border-color:#ff7a7a66!important}
+.mvpMode{display:inline-flex;border:1px solid #55e3cc40;padding:6px 11px;border-radius:20px;font-size:10px;font-weight:800;letter-spacing:.07em;color:#55e3cc;white-space:nowrap}
+.mvpMode.mvp-sim,.mvpMode.mvp-replay{color:#f4cd81;border-color:#f4cd8155}
+.mvpMode.mvp-offline{color:#ff9a9a;border-color:#ff7a7a66}
+/* The prototype's operator view is built on example data: not part of the MVP. */
+body .top .row .nModes{display:none!important}
+.mvpHead{max-width:340px;margin:10px auto 0}
+.mvpHeadSvg{width:100%;height:auto;display:block}
+.mvpRing{width:200px;margin:28px auto 10px}
+.mvpState{font-weight:700}
+.mvpState.mvp-ok{color:#55e3cc!important}.mvpState.mvp-wait{color:#f4cd81!important}.mvpState.mvp-off{color:#ff9a9a!important}
+.mvpQualityText p{margin:6px 0}
+.mvpReasons{margin:8px 0;padding-left:18px;color:#c5d6de;font-size:13px;line-height:1.5}
+.mvpAlert{border-left:3px solid #ff7a7a;padding:8px 12px;background:#ff7a7a12;color:#ffd1d1!important;border-radius:6px}
+.mvpChecklist{list-style:none;margin:12px 0 18px;padding:0;display:grid;gap:9px}
+.mvpChecklist li{display:flex;gap:10px;align-items:center;color:#a0b4c2;font-size:14px}
+.mvpChecklist li i{font-style:normal;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-size:12px;border:1px solid #ffffff22;flex:none}
+.mvpChecklist li.done{color:#eef8fa}.mvpChecklist li.done i{background:#55e3cc;color:#08232a;border-color:#55e3cc}
+.mvpChecklist li.warn{color:#f4cd81}.mvpChecklist li.warn i{border-color:#f4cd81;color:#f4cd81}
+.mvpField{display:flex;flex-direction:column;gap:6px;font-size:13px;color:#a8c0ce;margin:6px 0 4px}
+.v94 .mvpField input{width:100%;max-width:240px;margin:0;padding:10px 12px;font-size:15px;letter-spacing:.04em}
+.v94 button[disabled]{opacity:.45;cursor:not-allowed;filter:none}
+.mvpSaved{margin-top:18px}
+.mvpSaved code{font-size:12px;color:#b7d9df;word-break:break-all}
+@media(max-width:760px){.mvpHead{max-width:260px}.mvpBadge{font-size:9.5px!important;padding:6px 9px!important}}
+.mvpAlert.warn{border-left-color:#f4cd81;background:#f4cd8114;color:#ffe9b8!important}
+.mvpAlert.insist{border-left-color:#ff7a7a;background:#ff7a7a1f;font-weight:700}
+.mvpDecide{border:1px solid #ff7a7a66;background:#2a1418;border-radius:14px;padding:14px 16px;margin:12px 0}
+.mvpDecide b{color:#ffd1d1}.mvpDecide p{margin:6px 0}
+.mvpDecideGame{position:fixed;z-index:45;left:50%;bottom:90px;transform:translateX(-50%);width:min(560px,92vw)}
+.mvpDecideGame .mvpDecide{background:#1a0d10f2;backdrop-filter:blur(10px)}
